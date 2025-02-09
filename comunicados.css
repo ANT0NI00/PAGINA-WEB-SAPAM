@@ -10,6 +10,7 @@
     text-align: center;
 }
 
+/* Estilos para cada comunicado */
 .comunicado {
     background: white;
     padding: 30px;
@@ -23,12 +24,12 @@
     align-items: center;
     gap: 20px;
     text-align: center;
-    position: relative; /* Para aplicar el logo de fondo */
+    position: relative;
     background-color: #ffffff;
     background-image: url('logo.png'); /* Fondo con logo */
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 1000px; /* Ajustar tamaño del logo en el fondo */
+    background-size: 40%; /* Ajusta el tamaño del logo */
 }
 
 .comunicado h3 {
@@ -43,26 +44,49 @@
     color: #555;
 }
 
+/* Ajuste de imágenes dentro de los comunicados */
 .comunicado img {
-    width: 900px;  /* Ajustar el ancho de la imagen */
-    height: 400px; /* Ajustar el alto de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 900px; /* Máximo tamaño en pantallas grandes */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajustes para dispositivos pequeños */
-@media screen and (max-width: 768px) {
+/* RESPONSIVE DESIGN */
+
+/* Para tablets y pantallas medianas */
+@media screen and (max-width: 1024px) {
     .comunicado {
         padding: 20px;
+        background-size: 50%; /* Ajustar el logo de fondo */
     }
-
     .comunicado h3 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
+    .comunicado p {
+        font-size: 1.1rem;
+    }
+}
 
+/* Para celulares */
+@media screen and (max-width: 768px) {
+    #comunicados {
+        padding: 30px 15px;
+    }
+    .comunicado {
+        padding: 15px;
+        background-size: 60%; /* Hacer el logo más pequeño */
+    }
+    .comunicado h3 {
+        font-size: 1.4rem;
+    }
     .comunicado p {
         font-size: 1rem;
     }
-
+    .comunicado img {
+        max-width: 100%;
+        height: auto;
+    }
 }
