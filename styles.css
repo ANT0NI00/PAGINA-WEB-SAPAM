@@ -1,0 +1,173 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #ebf5fb;
+}
+
+/* Header */
+header {
+    background-color: #0077b6;
+    padding: 20px 0; /* Ajustamos el espaciado */
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease; /* Transición suave en el color de fondo */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el título */
+}
+
+.logo {
+    width: 200px; /* Logo más pequeño */
+    height: auto;
+    border-radius: 5px; /* Esquinas redondeadas en el logo */
+}
+
+h1 {
+    font-size: 1.8rem; /* Tamaño ajustado para mayor legibilidad */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+nav ul li {
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+nav ul li:hover {
+    transform: translateY(-5px); /* Levantamiento de elementos al pasar el mouse */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Color amarillo para el hover */
+    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8); /* Resplandor amarillo en hover */
+}
+
+/* Efecto sticky para el encabezado */
+header.sticky {
+    background-color: #005f87; /* Color más oscuro cuando se hace sticky */
+}
+
+/* Sección hero */
+#hero {
+    background: url('fondo.jpg') center/cover no-repeat;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* Secciones */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.servicios-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Contacto */
+#contacto p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #005f87;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+iframe {
+    max-width: 100%;
+    height: 450px;
+}

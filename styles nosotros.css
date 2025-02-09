@@ -1,0 +1,216 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Fondo y fuente */
+body {
+    background-color: #f1f8fc;
+    font-size: 1rem;
+}
+
+/* Header */
+header {
+    background-color: #0077b6;
+    padding: 20px 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+}
+
+/* Main */
+main {
+    padding: 60px 20px;
+}
+
+/* Sección "¿Quiénes somos?" */
+.about-us {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Misión y Visión */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.mission, .vision {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.mission h3, .vision h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #0077b6;
+}
+
+.mission p, .vision p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Valores */
+.values {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.values h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.values ul li {
+    margin-bottom: 10px;
+}
+
+/* Historia */
+.history {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.history h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.history p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Equipo */
+.team {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0077b6;
+}
+
+.team-member {
+    display: inline-block;
+    width: 250px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    background-color: #005f87;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

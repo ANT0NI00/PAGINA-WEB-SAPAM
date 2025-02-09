@@ -1,0 +1,48 @@
+/* Carrusel */
+.carrusel-container {
+    position: relative;
+    width: 80%; /* Ajustamos el ancho del contenedor */
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px; /* Limita el ancho máximo del carrusel */
+    height: 400px; /* Altura ajustable */
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+    height: 100%; /* Asegura que las imágenes tengan el mismo alto que el contenedor */
+    flex-shrink: 0;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    object-fit: cover; /* Ajusta la imagen para que cubra el área del contenedor */
+}
+
+/* Flechas de navegación */
+.flecha {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+}
+
+.flecha.left {
+    left: 10px;
+}
+
+.flecha.right {
+    right: 10px;
+}
+
+.flecha:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
