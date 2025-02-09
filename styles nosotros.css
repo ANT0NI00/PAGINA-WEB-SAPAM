@@ -327,3 +327,28 @@ footer p {
         padding: 15px;
     }
 }
+
+
+/* Estilo para el botón de menú (☰) */
+.menu-toggle {
+    display: none; /* Por defecto oculto en pantallas grandes */
+    font-size: 2rem;
+    color: white;
+    background-color: #0077b6;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle:hover {
+    background-color: #005f87;
+}
+
+/* Estilo para mostrar el botón en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar el botón en pantallas pequeñas */
+    }
+}
+
