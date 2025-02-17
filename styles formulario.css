@@ -7,15 +7,19 @@
 }
 
 body {
-    background-color: #f1f8fc;
-    font-size: 1rem;
+    background-color: #ebf5fb;
 }
 
 /* Header */
 header {
-    background-color: #0077b6;
-    padding: 20px 0;
+    background-color: #17415e;
+    padding: 15px 0;
     color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
 .container {
@@ -27,39 +31,40 @@ header {
     padding: 0 20px;
 }
 
+/* Logo */
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 15px; /* Espacio entre el logo y el título */
+    gap: 15px;
 }
 
-
 .logo {
-    width: 200px; /* Logo más pequeño */
+    width: 140px;
     height: auto;
-    border-radius: 5px; /* Esquinas redondeadas en el logo */
+    border-radius: 5px;
 }
 
 h1 {
-    font-size: 1.8rem; /* Tamaño ajustado para mayor legibilidad */
+    font-size: 1.6rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px; /* Espaciado entre letras */
+    letter-spacing: 1.5px;
 }
 
 /* Navegación */
+nav {
+    display: flex;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Espacio entre los elementos */
+    gap: 25px;
 }
 
 nav ul li {
-    transition: transform 0.3s ease; /* Efecto de hover */
-}
-
-nav ul li:hover {
-    transform: translateY(-5px); /* Levantamiento de elementos al pasar el mouse */
+    position: relative;
+    transition: transform 0.3s ease;
 }
 
 nav ul li a {
@@ -67,12 +72,13 @@ nav ul li a {
     color: white;
     font-weight: bold;
     font-size: 1.1rem;
-    transition: color 0.3s, text-shadow 0.3s;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Color amarillo para el hover */
-    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8); /* Resplandor amarillo en hover */
+    color: #ffcc00;
+    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
 }
 
 /* Main */
@@ -147,4 +153,89 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+}
+
+/* Responsividad */
+
+/* Menú responsive */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #17415e;
+        text-align: center;
+        padding: 10px 0;
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .form-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsividad para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
 }
