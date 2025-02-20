@@ -129,7 +129,7 @@ p {
 
 .btn {
     display: inline-block;
-    background-color: #ffcc00;
+    background-color: #0095e4;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
@@ -239,3 +239,4 @@ footer p {
         font-size: 0.7rem;
     }
 }
+    
