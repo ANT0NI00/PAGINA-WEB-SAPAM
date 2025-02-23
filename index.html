@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAPAM</title>
     <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+    
+    <!-- Enlaces AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <style>
+        /* Estilo para que el pie de página permanezca al final */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
 
 <!-- Encabezado -->
-<header>
+<header data-aos="fade-down" data-aos-duration="1500">
     <div class="container">
         <div class="logo-container">
             <img src="logo.png" alt="Logo de SAPAM" class="logo">
@@ -30,9 +44,9 @@
 
 <script src="menu.js"></script>
 
-
+<main>
     <!-- Sección principal (Hero) -->
-    <section id="hero">
+    <section id="hero" data-aos="fade-up" data-aos-duration="1500">
         <div class="container">
             <h2>Proporcionando Agua Potable de Calidad para Nuestra Comunidad</h2>
             <p>En SAPAM, garantizamos el acceso a un servicio eficiente y confiable para todos los ciudadanos.</p>
@@ -40,148 +54,132 @@
         </div>
     </section>
 
-
-
     <!-- Carrusel de imágenes -->
-    <div class="carrusel-container">
+    <div class="carrusel-container" data-aos="zoom-in" data-aos-duration="1500">
         <div class="carrusel">
             <img src="imagen 1.jpg" alt="Imagen 1">
             <img src="imagen 2.jpg" alt="Imagen 2">
             <img src="imagen 3.jpg" alt="Imagen 3">
         </div>
+        <!-- Flechas para cambiar las imágenes -->
+        <button class="flecha left">&#10094;</button>
+        <button class="flecha right">&#10095;</button>
     </div>
-            <!-- Flechas para cambiar las imágenes -->
-            <button class="flecha left">&#10094;</button>
-            <button class="flecha right">&#10095;</button>
+
+    <!-- Enlace al archivo carrusel.css -->
+    <link rel="stylesheet" href="carrusel.css">
+
+    <!-- Enlace al archivo carrusel.js -->
+    <script src="carrusel.js" defer></script>
+
+    <!-- Sección de Comunicados -->
+    <section id="comunicados" data-aos="fade-up" data-aos-duration="1500">
+        <h2>Comunicados</h2>
+
+        <!-- espacio en blanco copiar abajo = 10 lineas para ver el logo completo LINEA 72 COPIAR-->
+        ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+        <!-- aqui termina-->
+
+        <!-- Primer comunicado -->
+        <div class="comunicado" data-aos="fade-right" data-aos-duration="1500">
+            <h3>REPARACIONES EN FRACCIONAMIENTO CASA REAL</h3>
+            <p>SE LLEVARON A CABO LAS REPARACIONES EN FRACCIONAMIENTO CASA REAL QUE MEJORARA LA DISTRIBUCION DE AGUA POTABLE EN DICHO LUGAR
+                YA QUE SE TENDRA UNA MAYOR PRESION GRACIAS A LAS MEJORAS HIDRAULIZAS REALIZADAS.</p>
+            <img src="comunicado 1.jpg" alt="Imagen del comunicado 1">
+        </div>
+
+        <!-- Segundo comunicado -->
+        <div class="comunicado" data-aos="fade-right" data-aos-duration="1500">
+            <h3>Comunicado 2</h3>
+            <p>Este es el contenido del segundo comunicado. Puedes continuar con la información relevante o el anuncio de este comunicado.</p>
+            <img src="imagen2.jpg" alt="Imagen del comunicado 2">
+        </div>
+
+        <!-- Tercer comunicado -->
+        <div class="comunicado" data-aos="fade-right" data-aos-duration="1500">
+            <h3>Comunicado 3</h3>
+            <p>Este es el contenido del tercer comunicado. Escribe el texto que quieres mostrar aquí.</p>
+            <img src="imagen3.jpg" alt="Imagen del comunicado 3">
+        </div>
+
+        <!-- Cuarto comunicado -->
+        <div class="comunicado" data-aos="fade-right" data-aos-duration="1500">
+            <h3>Comunicado 4</h3>
+            <p>Este es el contenido del cuarto comunicado. Sigue agregando la información que desees.</p>
+            <img src="imagen4.jpg" alt="Imagen del comunicado 4">
+        </div>
+
+        <!-- Quinto comunicado -->
+        <div class="comunicado" data-aos="fade-right" data-aos-duration="1500">
+            <h3>Comunicado 5</h3>
+            <p>Este es el contenido del quinto comunicado. Aquí va lo que quieras comunicar a los usuarios.</p>
+            <img src="imagen5.jpg" alt="Imagen del comunicado 5">
+        </div>
+
+    </section>
+
+    <!-- Enlace al archivo comunicados.css -->
+    <link rel="stylesheet" href="comunicados.css">
+
+    <!-- Sección de Anuncios Publicitarios -->
+    <section id="anuncios" data-aos="fade-up" data-aos-duration="1500">
+        <h2>¡Anuncios de nuestros aliados!</h2>
+        <div class="container">
+            <div class="anuncio" data-aos="flip-left" data-aos-duration="1500">
+                <a href="#" class="anuncio-link">
+                    <img src="anuncio1.jpg" alt="Anuncio 1">
+                    <div class="anuncio-info">
+                        <h3>Aliado 1</h3>
+                        <p>¡Mira los increíbles descuentos que tenemos para ti!</p>
+                        <button class="btn-anuncio">Ver más</button>
+                    </div>
+                </a>
+            </div>
+            <div class="anuncio" data-aos="flip-left" data-aos-duration="1500">
+                <a href="#" class="anuncio-link">
+                    <img src="anuncio2.jpg" alt="Anuncio 2">
+                    <div class="anuncio-info">
+                        <h3>Aliado 2</h3>
+                        <p>Descubre nuevas oportunidades de negocio.</p>
+                        <button class="btn-anuncio">Ver más</button>
+                    </div>
+                </a>
+            </div>
+            <div class="anuncio" data-aos="flip-left" data-aos-duration="1500">
+                <a href="#" class="anuncio-link">
+                    <img src="anuncio3.jpg" alt="Anuncio 3">
+                    <div class="anuncio-info">
+                        <h3>Aliado 3</h3>
+                        <p>Disfruta de ofertas exclusivas solo para ti.</p>
+                        <button class="btn-anuncio">Ver más</button>
+                    </div>
+                </a>
+            </div>
+            <div class="anuncio" data-aos="flip-left" data-aos-duration="1500">
+                <a href="#" class="anuncio-link">
+                    <img src="anuncio4.jpg" alt="Anuncio 4">
+                    <div class="anuncio-info">
+                        <h3>Aliado 4</h3>
+                        <p>Conoce los productos más innovadores del mercado.</p>
+                        <button class="btn-anuncio">Ver más</button>
+                    </div>
+                </a>
+            </div>
+            <div class="anuncio" data-aos="flip-left" data-aos-duration="1500">
+                <a href="#" class="anuncio-link">
+                    <img src="anuncio5.jpg" alt="Anuncio 5">
+                    <div class="anuncio-info">
+                        <h3>Aliado 5</h3>
+                        <p>Te traemos nuevas oportunidades de inversión.</p>
+                        <button class="btn-anuncio">Ver más</button>
+                    </div>
+                </ </a>
+            </div>
         </div>
     </section>
-</section>
-
-
-<!-- Enlace al archivo carrusel.css -->
-<link rel="stylesheet" href="carrusel.css">
-
-<!-- Enlace al archivo carrusel.js -->
-<script src="carrusel.js" defer></script>
-
-
-
-
-<!-- Sección de Comunicados -->
-<section id="comunicados">
-    <h2>Comunicados</h2>
-
-
-
-       <!-- espacio en blanco copiar abajo = 10 lineas para ver el logo completo LINEA 72 COPIAR-->
-      ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-          <!-- aqui termina-->
-
-    <!-- Primer comunicado -->
-    <div class="comunicado">
-        <h3>REPARACIONES EN FRACCIONAMIENTO CASA REAL</h3>
-        <p>SE LLEVARON A CABO LAS REPARACIONES EN FRACCIONAMIENTO CASA REAL QUE MEJORARA LA DISTRIBUCION DE AGUA POTABLE EN DICHO LUGAR
-            YA QUE SE TENDRA UNA MAYOR PRESION GRACIAS A LAS MEJORAS HIDRAULIZAS REALIZADAS.</p>
-        <img src="comunicado 1.jpg" alt="Imagen del comunicado 1">
-    </div>
-
-    <!-- Segundo comunicado -->
-    <div class="comunicado">
-        <h3>Comunicado 2</h3>
-        <p>Este es el contenido del segundo comunicado. Puedes continuar con la información relevante o el anuncio de este comunicado.</p>
-        <img src="imagen2.jpg" alt="Imagen del comunicado 2">
-    </div>
-
-    <!-- Tercer comunicado -->
-    <div class="comunicado">
-        <h3>Comunicado 3</h3>
-        <p>Este es el contenido del tercer comunicado. Escribe el texto que quieres mostrar aquí.</p>
-        <img src="imagen3.jpg" alt="Imagen del comunicado 3">
-    </div>
-
-    <!-- Cuarto comunicado -->
-    <div class="comunicado">
-        <h3>Comunicado 4</h3>
-        <p>Este es el contenido del cuarto comunicado. Sigue agregando la información que desees.</p>
-        <img src="imagen4.jpg" alt="Imagen del comunicado 4">
-    </div>
-
-    <!-- Quinto comunicado -->
-    <div class="comunicado">
-        <h3>Comunicado 5</h3>
-        <p>Este es el contenido del quinto comunicado. Aquí va lo que quieras comunicar a los usuarios.</p>
-        <img src="imagen5.jpg" alt="Imagen del comunicado 5">
-    </div>
-
-</section>
-
-<!-- Enlace al archivo comunicados.css -->
-<link rel="stylesheet" href="comunicados.css">
-
-
-<!-- Sección de Anuncios Publicitarios -->
-<section id="anuncios">
-    <h2>¡Anuncios de nuestros aliados!</h2>
-    <div class="container">
-        <div class="anuncio">
-            <a href="#" class="anuncio-link">
-                <img src="anuncio1.jpg" alt="Anuncio 1">
-                <div class="anuncio-info">
-                    <h3>Aliado 1</h3>
-                    <p>¡Mira los increíbles descuentos que tenemos para ti!</p>
-                    <button class="btn-anuncio">Ver más</button>
-                </div>
-            </a>
-        </div>
-        <div class="anuncio">
-            <a href="#" class="anuncio-link">
-                <img src="anuncio2.jpg" alt="Anuncio 2">
-                <div class="anuncio-info">
-                    <h3>Aliado 2</h3>
-                    <p>Descubre nuevas oportunidades de negocio.</p>
-                    <button class="btn-anuncio">Ver más</button>
-                </div>
-            </a>
-        </div>
-        <div class="anuncio">
-            <a href="#" class="anuncio-link">
-                <img src="anuncio3.jpg" alt="Anuncio 3">
-                <div class="anuncio-info">
-                    <h3>Aliado 3</h3>
-                    <p>Disfruta de ofertas exclusivas solo para ti.</p>
-                    <button class="btn-anuncio">Ver más</button>
-                </div>
-            </a>
-        </div>
-        <div class="anuncio">
-            <a href="#" class="anuncio-link">
-                <img src="anuncio4.jpg" alt="Anuncio 4">
-                <div class="anuncio-info">
-                    <h3>Aliado 4</h3>
-                    <p>Conoce los productos más innovadores del mercado.</p>
-                    <button class="btn-anuncio">Ver más</button>
-                </div>
-            </a>
-        </div>
-        <div class="anuncio">
-            <a href="#" class="anuncio-link">
-                <img src="anuncio5.jpg" alt="Anuncio 5">
-                <div class="anuncio-info">
-                    <h3>Aliado 5</h3>
-                    <p>Te traemos nuevas oportunidades de inversión.</p>
-                    <button class="btn-anuncio">Ver más</button>
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
-
-
-
-
 
     <!-- Sección de contacto -->
-    <section id="contacto">
+    <section id="contacto" data-aos="fade-up" data-aos-duration="1500">
         <div class="container">
             <h2>Contáctanos</h2>
             <p>📍 Dirección: [Aquí va la dirección de SAPAM]</p>
@@ -191,22 +189,24 @@
         </div>
     </section>
 
+    <!-- Mapa de Google -->
+    <div class="mapa-container" data-aos="zoom-in" data-aos-duration="1500">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1739091126115!6m8!1m7!1suijyLYG3MGhu4e03vLblHA!2m2!1d16.90914871359413!2d-92.0878842476504!3f253.94340457915482!4f-3.506477080402476!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</main>
 
+<!-- Pie de página -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 SAPAM - Todos los derechos reservados.</p>
+    </div>
+</footer>
 
-            <!-- Mapa de Google -->
-            <div class="mapa-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1739091126115!6m8!1m7!1suijyLYG3MGhu4e03vLblHA!2m2!1d16.90914871359413!2d-92.0878842476504!3f253.94340457915482!4f-3.506477080402476!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- Pie de página -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 SAPAM - Todos los derechos reservados.</p>
-        </div>
-    </footer>
+<!-- Scripts AOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
