@@ -26,7 +26,6 @@
     text-align: center;
     position: relative;
     background-color: #ffffff;
-    background-image: url('logo.png'); /* Fondo con logo */
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 40%; /* Ajusta el tamaño del logo */

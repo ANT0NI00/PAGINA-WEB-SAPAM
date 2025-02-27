@@ -454,6 +454,8 @@ footer p {
 }
 
 .imagen-equipo img {
+    display: block;
+    margin: 0 auto;
     width: 100%;
     max-width: 1200px;
     height: auto;
@@ -461,11 +463,19 @@ footer p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+
 .titulo-equipo {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
+    text-align: center; /* Centra el texto */
+    background-color: #f0f0f0; /* Fondo suave */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
 }
 
 .fichas-equipo {
@@ -704,7 +714,3 @@ footer p {
         height: 160px;
     }
 }
-
-
-
-
