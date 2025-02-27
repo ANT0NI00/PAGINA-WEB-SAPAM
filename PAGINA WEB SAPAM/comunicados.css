@@ -1,0 +1,91 @@
+/* Sección de Comunicados */
+#comunicados {
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+}
+
+#comunicados h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Estilos para cada comunicado */
+.comunicado {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 40%; /* Ajusta el tamaño del logo */
+}
+
+.comunicado h3 {
+    font-size: 1.8rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.comunicado p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Ajuste de imágenes dentro de los comunicados */
+.comunicado img {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 900px; /* Máximo tamaño en pantallas grandes */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Para tablets y pantallas medianas */
+@media screen and (max-width: 1024px) {
+    .comunicado {
+        padding: 20px;
+        background-size: 50%; /* Ajustar el logo de fondo */
+    }
+    .comunicado h3 {
+        font-size: 1.6rem;
+    }
+    .comunicado p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Para celulares */
+@media screen and (max-width: 768px) {
+    #comunicados {
+        padding: 30px 15px;
+    }
+    .comunicado {
+        padding: 15px;
+        background-size: 60%; /* Hacer el logo más pequeño */
+    }
+    .comunicado h3 {
+        font-size: 1.4rem;
+    }
+    .comunicado p {
+        font-size: 1rem;
+    }
+    .comunicado img {
+        max-width: 100%;
+        height: auto;
+    }
+}

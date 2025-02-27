@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - SAPAM</title>
+    <link rel="stylesheet" href="styles formulario.css">
+    
+    <!-- Enlaces AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <style>
+        /* Estilo para que el pie de página permanezca al final */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .advertisement {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header data-aos="fade-down" data-aos-duration="1500">
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo de SAPAM" class="logo">
+                <h1>Sistema de Agua Potable y Alcantarillado Municipal</h1>
+            </div>
+            <!-- Botón para abrir/cerrar el menú -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="formularios.html">Formularios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="menu.js"></script>
+
+    <!-- Contenido principal -->
+    <main>
+        <section data-aos="fade-up" data-aos-duration="1500">
+            <h2>Formularios para Descarga</h2>
+            <p>A continuación se encuentran los motivos por los cuales puedes llenar un formulario. Haz clic en el enlace para descargar el formulario en formato PDF:</p>
+
+            <ul class="form-list">
+                <li>
+                    <h3>CONSTANCIA DE CONTRATOS</h3>
+                    <p>Si deseas obtener una constancia para obtener el servicio de agua, conoce los requisitos.</p>
+                    <a href="formularios/CONSTANCIA%20DE%20CONTRATOS.pdf" class="btn" target="_blank">Descargar Formulario</a>
+                </li>
+                <li>
+                    <h3>CAMBIOS DE NOMBRE</h3>
+                    <p>PARA CONOCER LOS REQUISITOS DE CAMBIOS DE NOMBRE Y LLENAR EL FORMULARIO CONSULTA AQUÍ</p>
+                    <a href="formularios/CAMBIOS%20DE%20NOMBRE.pdf" class="btn" target="_blank">Descargar Formulario</a>
+                </li>
+                <li>
+                    <h3>BAJA TEMPORAL</h3>
+                    <p>SI DESEAS REALIZAR UNA BAJA TEMPORAL O DEFINITIVA AL SERVICIO DE AGUA, DESCARGA EL SIGUIENTE FORMULARIO.</p>
+                    <a href="formularios/BAJA TEMPORAL .pdf" class="btn" target="_blank">Descargar Formulario</a>
+                </li>
+                <li>
+                    <h3>FALTA DE SUMINISTRO DE AGUA</h3>
+                    <p>SI EN TU DOMICLIO NO LLEGA SATISFACTORIAMENTE EL SUMINSITRO DE AGUA, DESCARGA EL SIGUIENTE FORMULARIO.</p>
+                    <a href="formularios/FALTA DE SUMINISTRO DE AGUA.pdf" class="btn" target="_blank">Descargar Formulario</a>
+                </li>
+                <li>
+                    <h3>MANTENIMIENTO</h3>
+                    <p>SI DESEAS REALIZAR UN MANTENIMIENTO PREVENTIVO MANDANOS UNA SOLICITUD.</p>
+                    <a href="formularios/MANTENIMIENTOS .pdf" class="btn" target="_blank">Descargar Formulario</a>
+                </li>
+                <li>
+                    <h3>COBRO INCORRECTO</h3>
+                    <p>SI LE LLEGA UN RECIBO QUE CONSIDERE INAPROPIADO, LLENE EL SIGUIENTE FORMULARIO PARA OBTENER MAS DETALLES.</p>
+                    <a href="formularios/REPORTE DE COBRO INCORRECTO EN EL RECIBO.pdf" class="btn" target="_blank">Descargar Formulario</a>
+                </li>
+                <!-- Otros formularios se mantienen igual -->
+            </ul>
+        </section>
+
+<!-- Sección de Anuncios Publicitarios -->
+<section class="advertisement" data-aos="fade-up" data-aos-duration="1500">
+    <h2>¡Anuncios Importantes!</h2>
+    <p>Consulta nuestras promociones y servicios especiales. ¡No te lo pierdas!</p>
+    <div class="container">
+        <div class="anuncio">
+            <a href="#" class="anuncio-link">
+                <img src="anuncio1.jpg" alt="Anuncio 1">
+                <div class="anuncio-info">
+                    <h3>Aliado 1</h3>
+                    <p>¡Mira los increíbles descuentos que tenemos para ti!</p>
+                </div>
+            </a>
+        </div>
+        <div class="anuncio">
+            <a href="#" class="anuncio-link">
+                <img src="anuncio2.jpg" alt="Anuncio 2">
+                <div class="anuncio-info">
+                    <h3>Aliado 2</h3>
+                    <p>Descubre nuevas oportunidades de negocio.</p>
+                </div>
+            </a>
+        </div>
+        <div class="anuncio">
+            <a href="#" class="anuncio-link">
+                <img src="anuncio3.jpg" alt="Anuncio 3">
+                <div class="anuncio-info">
+                    <h3>Aliado 3</h3>
+                    <p>Disfruta de ofertas exclusivas solo para ti.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Pie de página -->
+    <footer data-aos="fade-up" data-aos-duration="1500">
+        <p>&copy; 2025 Sistema de Agua Potable y Alcantarillado Municipal - SAPAM</p>
+    </footer>
+
+    <!-- Scripts AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
