@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntos de Cobro - SAPAM</title>
+    <link rel="stylesheet" href="styles_p_de_cobro.css">
+    <!-- Iconos FontAwesome (para los íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Incluir AOS para las animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Incluir tu JS para el menú móvil -->
+    <script defer src="menu.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-duration="1500">
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo de SAPAM" class="logo">
+                <h1>Sistema de Agua Potable y Alcantarillado Municipal</h1>
+            </div>
+
+            <!-- Botón para abrir el menú en móviles -->
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i> <!-- Icono de menú -->
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="puntos_cobro.html">Puntos de Cobro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Puntos de Cobro -->
+    <section id="puntos-cobro" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <!-- Título y Descripción -->
+            <div class="intro">
+                <h2>Puntos de Cobro SAPAM</h2>
+                <p>Visita los siguientes puntos para realizar tus pagos y consultas. Encuentra el más cercano a tu ubicación.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Puntos de Cobro -->
+    <section>
+        <div class="container">
+            <div class="puntos-grid">
+                <!-- Puntos de Cobro (12 elementos) -->
+                <div class="punto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="icono">
+                        <img src="puntos de cobro/Captura de pantalla 2025-03-09 200414.png" alt="Centro de Atención Ocosingo" class="img-punto">
+                    </div>
+                    <h3>OFICINAS DE SAPAM</h3>
+                    <p><i class="fas fa-map-marker-alt"></i></p>
+                    <p><i class="far fa-clock"></i> Lunes a Viernes, 8:00 AM - 4:00 PM</p>
+                    <p><i class="fas fa-phone-alt"></i> Teléfono: (123) 456-7890</p>
+                    <a href="#" class="btn-punto">Ver en el mapa</a>
+                </div>
+
+                <div class="punto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="icono">
+                        <img src="imagenes/centro_atencion_2.jpg" alt="Punto de Cobro 2" class="img-punto">
+                    </div>
+                    <h3>Punto de Cobro 2</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 456, Ocosingo</p>
+                    <p><i class="far fa-clock"></i> Lunes a Viernes, 8:00 AM - 3:00 PM</p>
+                    <p><i class="fas fa-phone-alt"></i> Teléfono: (987) 654-3210</p>
+                    <a href="#" class="btn-punto">Ver en el mapa</a>
+                </div>
+
+                <div class="punto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="icono">
+                        <img src="imagenes/centro_atencion_3.jpg" alt="Punto de Cobro 3" class="img-punto">
+                    </div>
+                    <h3>Punto de Cobro 3</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 789, Ocosingo</p>
+                    <p><i class="far fa-clock"></i> Lunes a Viernes, 9:00 AM - 5:00 PM</p>
+                    <p><i class="fas fa-phone-alt"></i> Teléfono: (555) 123-4567</p>
+                    <a href="#" class="btn-punto">Ver en el mapa</a>
+                </div>
+
+                <div class="punto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    <div class="icono">
+                        <img src="imagenes/centro_atencion_4.jpg" alt="Punto de Cobro 4" class="img-punto">
+                    </div>
+                    <h3>Punto de Cobro 4</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 321, Ocosingo</p>
+                    <p><i class="far fa-clock"></i> Lunes a Viernes, 8:00 AM - 4:00 PM</p>
+                    <p><i class="fas fa-phone-alt"></i> Teléfono: (444) 987-6543</p>
+                    <a href="#" class="btn-punto">Ver en el mapa</a>
+                </div>
+
+                <!-- Agregar más puntos de cobro según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SAPAM - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Incluir AOS script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init();
+    </script>
+</body>
+
+</html>
