@@ -9,23 +9,29 @@
 <body>
 
     <!-- Encabezado -->
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="logo.png" alt="Logo de SAPAM" class="logo"> 
-                <h1>Sistema de Agua Potable y Alcantarillado Municipal</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="formularios.html">Formularios</a></li>
-                </ul>
-            </nav>
+<header data-aos="fade-down" data-aos-duration="1500">
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo de SAPAM" class="logo">
+            <h1>Sistema de Agua Potable y Alcantarillado Municipal</h1>
         </div>
-    </header>
+        <!-- Botón para abrir/cerrar el menú -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="puntos_cobro.html">puntos de cobro</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
+<script src="menu.js"></script>
+
+<main>
     <!-- Sección de servicios -->
     <section id="servicios">
         <h2>Servicios que ofrecemos</h2>
