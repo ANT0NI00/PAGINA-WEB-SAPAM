@@ -329,3 +329,182 @@ nav {
         padding: 10px 20px;
     }
 }
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .servicio {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #005f8b;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .servicio {
+        width: 90%;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    #hero {
+        padding: 80px 20px;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .servicio {
+        width: 95%;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Mejoras para computadoras de escritorio grandes */
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(5, 1fr); /* Aseguramos que haya 5 columnas por fila */
+        gap: 30px; /* Espaciado más amplio entre los anuncios */
+    }
+
+    .anuncio {
+        width: 100%; /* Los anuncios ocupan todo el ancho disponible */
+    }
+
+    .anuncio img {
+        height: 230px; /* Ajustamos la altura de los anuncios */
+    }
+
+    .anuncio-info {
+        padding: 25px;
+    }
+}
+
+/* Pantallas medianas (tablets, laptops) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* 3 anuncios por fila */
+        gap: 40px; /* Aumentamos el espacio entre los anuncios */
+    }
+
+    .anuncio img {
+        height: 200px;
+    }
+
+    .anuncio-info {
+        padding: 20px;
+    }
+}
+
+/* Pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 anuncios por fila */
+        gap: 30px; /* Espaciado más amplio */
+    }
+
+    .anuncio img {
+        height: 180px;
+    }
+}
+
+/* Pantallas muy pequeñas (móviles muy pequeños) */
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 anuncio por fila */
+    }
+
+    .anuncio img {
+        height: 160px;
+    }
+}
+
+
+body {
+    transform: none !important;
+    opacity: 1 !important;
+}
+

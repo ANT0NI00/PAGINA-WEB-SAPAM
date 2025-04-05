@@ -1,12 +1,15 @@
-/* Carrusel */
 .carrusel-container {
     position: relative;
-    width: 90%;
+    width: 70%; /* Reducido respecto al 90% anterior */
     margin: 0 auto;
     overflow: hidden;
-    max-width: 1200px;
-    height: 400px;
+    max-width: 3780px;
+    height: auto;
+    aspect-ratio: 2/1; /* Mantiene proporción de 3780x1890 */
 }
+
+
+
 
 .carrusel {
     display: flex;
