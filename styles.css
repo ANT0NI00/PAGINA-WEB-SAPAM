@@ -44,6 +44,18 @@ header {
     border-radius: 5px;
 }
 
+
+
+/* Menú responsive */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+
 h1 {
     font-size: 1.6rem;
     font-weight: bold;
@@ -85,13 +97,6 @@ nav ul li a:hover {
     text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
 }
 
-/* Menú responsive */
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
-}
 
 
 

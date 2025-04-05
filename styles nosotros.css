@@ -31,19 +31,6 @@ header {
     padding: 0 20px;
 }
 
-/* Logo */
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo {
-    width: 140px;
-    height: auto;
-    border-radius: 5px;
-}
-
 h1 {
     font-size: 1.6rem;
     font-weight: bold;
@@ -70,7 +57,6 @@ nav ul li {
 nav ul li:hover {
     transform: translateY(-3px);
 }
-
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -79,6 +65,8 @@ nav ul li a {
     transition: color 0.3s ease-in-out;
     padding: 10px 15px;
 }
+
+
 
 nav ul li a:hover {
     color: #ffcc00;
@@ -100,39 +88,59 @@ nav ul li a:hover {
     }
 
     nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #005f8b;
         position: absolute;
         top: 70px;
         left: 0;
-        width: 100%;
-        background-color: #17415e;
         text-align: center;
         padding: 10px 0;
-        display: none;
-        flex-direction: column;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 15px;
+        padding: 0;
     }
 
-    nav ul li a {
-        display: block;
-        padding: 12px;
-        font-size: 1.2rem;
+    nav ul li {
+        padding: 10px;
     }
 
-    /* Menú abierto */
     nav.active {
         display: flex;
     }
+
+    .logo {
+        width: 100px;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .servicio {
+        width: 90%;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
 }
+
 
 
 /* Main */
 main {
     padding: 60px 20px;
 }
+
+
 /* Sección ¿Quiénes somos? */
 .about-us {
     text-align: center;
@@ -147,6 +155,7 @@ main {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #0077b6;
+    font-weight: bold;
 }
 
 .about-us p {
@@ -155,12 +164,14 @@ main {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-    font-weight: 400;
+    text-align: justify;
+    font-weight: bold;
 }
+
 /* Misión y Visión */
 .mission-vision {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 40px;
@@ -171,12 +182,12 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 10px); /* Reducir el tamaño en pantallas grandes */
+    width: calc(50% - 10px);
     transition: transform 0.3s ease-in-out;
 }
 
 .mission:hover, .vision:hover {
-    transform: translateY(-5px); /* Hover con efecto */
+    transform: translateY(-5px);
 }
 
 .mission h3, .vision h3 {
@@ -189,15 +200,18 @@ main {
 .mission p, .vision p {
     font-size: 1.2rem;
     color: #555;
+    text-align: justify;
+    font-weight: bold;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
     .mission, .vision {
-        width: 100%; /* En pantallas pequeñas, ocuparán todo el ancho */
-        margin-bottom: 20px; /* Espacio entre las secciones */
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
+
 
 /* Valores */
 .values {
@@ -221,6 +235,10 @@ main {
     padding: 0;
     font-size: 1.2rem;
     color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    font-weight: bold;
 }
 
 .values ul li {
@@ -249,7 +267,10 @@ main {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
+    text-align: justify;
+    font-weight: bold;
 }
+
 
 /* Equipo */
 .team {
@@ -312,40 +333,42 @@ footer p {
     }
 
     h1 {
-        font-size: 1.5rem;
-    }
-
-    .logo {
-        width: 150px;
-    }
-
-    nav ul {
-        gap: 15px;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .mission, .vision {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .team-member {
-        width: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .logo-container {
-        flex-direction: column;
-        align-items: center;
+        font-size: 1.4rem;
     }
 
     .logo {
         width: 120px;
     }
+
+    nav {
+        width: 100%;
+        padding: 10px 0; /* reducido */
+    }
+
+    nav ul {
+        gap: 10px; /* menos espacio entre elementos */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* tamaño de texto más pequeño */
+        padding: 6px 10px; /* área más compacta */
+        display: inline-block;
+    }
+
+    .mission, .vision {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .team-member {
+        width: 180px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
 
     h1 {
         font-size: 1.3rem;
@@ -374,72 +397,10 @@ footer p {
     }
 }
 
-@media (max-width: 480px) {
-    header {
-        padding: 10px 0;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav.active ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: #0077b6;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    .container {
-        padding: 0 5px;
-    }
-
-    .team-member {
-        width: 150px;
-    }
-
-    .mission, .vision {
-        padding: 15px;
-    }
-}
 
 
 
-/* Estilo para el botón de menú (☰) */
-.menu-toggle {
-    display: none; /* Por defecto oculto en pantallas grandes */
-    font-size: 2rem;
-    color: white;
-    background-color: #0077b6;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.menu-toggle:hover {
-    background-color: #005f87;
-}
-
-/* Estilo para mostrar el botón en pantallas pequeñas */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostrar el botón en pantallas pequeñas */
-    }
-}
 
 
 /* Estilo general para la sección del equipo */
