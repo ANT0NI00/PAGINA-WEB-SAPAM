@@ -141,6 +141,7 @@ main {
 }
 
 
+
 /* Sección ¿Quiénes somos? */
 .about-us {
     text-align: center;
@@ -153,6 +154,45 @@ main {
 
 .about-us h2 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+
+
+    .about-us p {
+        text-align: left;
+        margin: 0; /* opcional: elimina el centrado automático */
+    }
+}
+/* Fuente global para las secciones */
+.about-us, .mission, .vision, .values, .history {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Sección ¿Quiénes somos? */
+.about-us {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #0077b6;
     font-weight: bold;
@@ -191,7 +231,7 @@ main {
 }
 
 .mission h3, .vision h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 15px;
     color: #0077b6;
     font-weight: bold;
@@ -203,15 +243,6 @@ main {
     text-align: justify;
     font-weight: bold;
 }
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .mission, .vision {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
 
 /* Valores */
 .values {
@@ -259,6 +290,7 @@ main {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #0077b6;
+    font-weight: bold;
 }
 
 .history p {
@@ -269,6 +301,26 @@ main {
     margin: 0 auto;
     text-align: justify;
     font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .mission, .vision {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-us p,
+    .mission p,
+    .vision p,
+    .values,
+    .values h3,
+    .values ul,
+    .history p {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 
