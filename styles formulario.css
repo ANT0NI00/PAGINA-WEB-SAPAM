@@ -630,7 +630,6 @@ body {
 .formulario-header {
     text-align: center;
     padding: 40px 20px 20px;
-    background: linear-gradient(to right, #e0f7fa, #ffffff);
     border-radius: 12px;
     margin-bottom: 40px;
     box-shadow: 0 0 10px rgba(0, 78, 146, 0.1);
