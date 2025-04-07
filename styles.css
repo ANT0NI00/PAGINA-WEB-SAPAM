@@ -300,14 +300,27 @@ iframe {
     color: inherit;
     height: 100%;
 }
+.anuncio {
+    margin: 30px auto; /* espacio por fuera del contenedor y centrado */
+    max-width: 800px; /* límite de ancho para que no se estire demasiado */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 15px; /* espacio interno para que el contenido no quede pegado */
+}
 
 .anuncio img {
     width: 100%;
-    height: 230px; /* Ajustamos la altura para que no esté tan grande */
-    object-fit: cover;
-    border-radius: 15px 15px 0 0; /* Solo las esquinas superiores redondeadas */
-    transition: transform 0.3s ease;
+    max-height: 300px;
+    height: auto;
+    object-fit: contain; /* o cover, según prefieras */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* centra la imagen horizontalmente */
 }
+
+
+
 
 .anuncio img:hover {
     transform: scale(1.05);
@@ -529,3 +542,9 @@ body {
     opacity: 1 !important;
 }
 
+.anuncios-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
