@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - SAPAM</title>
     <link rel="stylesheet" href="styles  servicios.css">
+
 </head>
 <body>
 
@@ -28,51 +29,55 @@
             </nav>
         </div>
     </header>
-    
+
     <script src="menu.js"></script>
-    
+
     <main class="main-content">
+
+        
+        <!-- Separador para darle espacio al carrusel -->
+        <div style="margin-top: 50px;"></div>
+
+        <!-- Carrusel de imágenes -->
+        <div class="carrusel-container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="carrusel">
+                <img src="banners/banner 1.png" alt="Imagen 1">
+                <img src="banners/banner 2.png" alt="Imagen 2">
+                <img src="banners/banner 3.png" alt="Imagen 3">
+                <img src="banners/banner 4.png" alt="Imagen 4">
+            </div>
+            <button class="flecha left">&#10094;</button>
+            <button class="flecha right">&#10095;</button>
+        </div>
+        <link rel="stylesheet" href="carrusel.css"> <!-- Enlace al CSS del carrusel -->
+    <script src="carrusel.js" defer></script>
+
         <!-- Sección de servicios -->
         <section id="servicios">
             <h2>Servicios del SAPAM Ocosingo</h2>
             <p>En SAPAM Ocosingo ofrecemos servicios esenciales para el bienestar de la comunidad, enfocados en el suministro de agua, saneamiento y cultura del agua.</p>
 
             <div class="servicios-grid">
-                <!-- Servicio 1 -->
                 <div class="servicio">
                     <img src="servicios/agua.png" alt="Agua Potable" class="servicio-img">
                     <h3>Agua Potable</h3>
                     <p>Suministro y distribución de agua potable para todos los hogares y negocios del municipio.</p>
                 </div>
-
-                <!-- Servicio 2 -->
                 <div class="servicio">
                     <img src="servicios/reparacion de fugas.png" alt="Alcantarillado" class="servicio-img">
                     <h3>Mantenimiento</h3>
                     <p>Reparación de fugas, atención a reportes y mantenimiento constante de la red hidráulica.</p>
                 </div>
-
-                <!-- Servicio 3 -->
                 <div class="servicio">
                     <img src="servicios/facturacion.png" alt="Mantenimiento" class="servicio-img">
                     <h3>Facturación</h3>
                     <p>Emisión y cobro de recibos de agua de manera clara y transparente.</p>
                 </div>
-
-                <!-- Servicio 4 -->
                 <div class="servicio">
                     <img src="servicios/cuida el agua.png" alt="Facturación" class="servicio-img">
                     <h3>Cultura del Agua</h3>
                     <p>Capacitaciones, talleres y campañas para promover el uso responsable del agua.</p>
                 </div>
-
-                <!-- Servicio 5
-                <div class="servicio">
-                    <img src="cultura_agua.jpg" alt="Cultura del Agua" class="servicio-img">
-                    <h3>Cultura del Agua</h3>
-                    <p>Capacitaciones, talleres y campañas para promover el uso responsable del agua.</p>
-                </div>
-                 -->
             </div>
         </section>
     </main>
@@ -81,6 +86,7 @@
     <footer class="footer-bottom">
         <p>&copy; 2025 Sistema de Agua Potable y Alcantarillado Municipal - SAPAM</p>
     </footer>
-    
+
+
 </body>
 </html>
