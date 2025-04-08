@@ -1,36 +1,42 @@
-// Carrusel
-const carrusel = document.querySelector('.carrusel');
-const images = document.querySelectorAll('.carrusel img');
-const totalImages = images.length;
+document.querySelectorAll('.carrusel-container').forEach(container => {
+    const carrusel = container.querySelector('.carrusel');
+    const images = container.querySelectorAll('.carrusel img');
+    const totalImages = images.length;
+    const flechaIzquierda = container.querySelector('.flecha.left');
+    const flechaDerecha = container.querySelector('.flecha.right');
+    let currentIndex = 0;
+    let isAnimating = false;
 
-let currentIndex = 0;
+    function updateCarrusel() {
+        isAnimating = true;
+        carrusel.style.transition = 'transform 0.5s ease-in-out';
+        carrusel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        setTimeout(() => isAnimating = false, 500);
+    }
 
-function updateCarrusel() {
-    // Cambiar la posición del carrusel para mostrar la imagen correcta
-    carrusel.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+    function moveToNextImage() {
+        if (isAnimating) return;
+        currentIndex = (currentIndex + 1) % totalImages;
+        updateCarrusel();
+    }
 
-function moveToNextImage() {
-    // Aumentar el índice para mover a la siguiente imagen
-    currentIndex = (currentIndex + 1) % totalImages;
+    function moveToPrevImage() {
+        if (isAnimating) return;
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        updateCarrusel();
+    }
+
+    flechaIzquierda.addEventListener('click', moveToPrevImage);
+    flechaDerecha.addEventListener('click', moveToNextImage);
+
+    // Auto-cambio cada 10 segundos
+    let intervalo = setInterval(moveToNextImage, 10000);
+
+    // Pausar cambio automático si el usuario pasa el mouse
+    container.addEventListener('mouseenter', () => clearInterval(intervalo));
+    container.addEventListener('mouseleave', () => {
+        intervalo = setInterval(moveToNextImage, 10000);
+    });
+
     updateCarrusel();
-}
-
-function moveToPrevImage() {
-    // Disminuir el índice para mover a la imagen anterior
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-    updateCarrusel();
-}
-
-// Configurar las flechas
-const flechaIzquierda = document.querySelector('.flecha.left');
-const flechaDerecha = document.querySelector('.flecha.right');
-
-flechaIzquierda.addEventListener('click', moveToPrevImage);
-flechaDerecha.addEventListener('click', moveToNextImage);
-
-// Iniciar el carrusel con un intervalo de 10 segundos formato 1000 por segundo
-setInterval(moveToNextImage, 10000); // Cambia la imagen cada 10segundos
-
-// Inicializar el carrusel
-updateCarrusel();
+});
