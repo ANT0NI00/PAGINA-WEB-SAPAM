@@ -727,3 +727,174 @@ footer p {
         height: 160px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales */
+.area-container {
+    padding: 40px 20px;
+    background-color: #f0f4f8; /* Fondo más suave */
+    font-family: 'Kanit', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Sección del área */
+.area-section {
+    margin-bottom: 60px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 20px; /* Añadido padding */
+}
+
+/* Títulos */
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen grupal */
+.group-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 4px solid #ddd;
+    object-fit: cover;
+}
+
+/* Estilos para los miembros */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjetas de miembros */
+.member-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 30px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.member-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del miembro */
+.member-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%; /* Círculo para las imágenes */
+    margin: 20px auto;
+    border: 4px solid #fff; /* Borde blanco alrededor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Información del miembro */
+.member-info {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con opacidad */
+    color: #333;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+}
+
+.member-card:hover  {
+    background-color: rgba(240, 240, 240, 0.9);
+}
+
+/* Nombre del miembro */
+.member-info .name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.member-card:hover .name {
+    color: #007bff; /* Color azul en hover */
+}
+
+/* Rol del miembro */
+.member-info .role {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Responsividad: pantallas pequeñas */
+@media (max-width: 768px) {
+    .area-container {
+        padding: 20px 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .team-members {
+        gap: 20px;
+    }
+
+    .member-card {
+        width: calc(50% - 20px); /* Dos miembros por fila */
+    }
+}
+
+/* Responsividad: pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .member-card img {
+        width: 120px; /* Ajuste de la imagen para pantallas muy pequeñas */
+        height: 120px;
+    }
+
+    .member-info {
+        padding: 10px;
+    }
+
+    .member-card {
+        width: 100%; /* Un miembro por fila */
+    }
+}
+
+/* Estilo adicional para mejorar la accesibilidad */
+.area-section:focus-within {
+    outline: 2px solid #007bff; /* Resaltar la sección cuando está enfocada */
+}
